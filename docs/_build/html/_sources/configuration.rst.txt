@@ -92,7 +92,7 @@ Then you have to register and get a `clientId` and a `clientSecret` to use in th
 
 The current Digi-Key plugin needs to validate the user using a complex mechanism. It will open a navigator
 window to get a token. If you get an error about a wrong certificate please ignore it. The obtained token
-is cached, so you don't need to validate it all the time.
+is cached, so you don't need to validate it all the time. For more information consult the DigiKey_PlugIn_site_.
 
 You can also define options using environment variables. As an example, you can specify Mouser's key defining
 the `MOUSER_KEY` environment variable. Note that environment variables has more precedence than the default config file.
@@ -100,3 +100,4 @@ But command line options, including any configuration file passed using it, has 
 
 .. _API_site: https://developer.digikey.com/get_started
 .. _Nexar: https://nexar.com/api
+.. _DigiKey_PlugIn_site: https://github.com/set-soft/kicost-digikey-api-v4/

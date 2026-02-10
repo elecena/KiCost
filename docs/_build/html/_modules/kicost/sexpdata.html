@@ -1,25 +1,21 @@
-
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" data-content_root="../../">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>kicost.sexpdata &#8212; kicost 1.1.20 documentation</title>
-    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/classic.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../../_static/classic.css?v=2bf1fcf8" />
     
-    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
-    <script src="../../_static/jquery.js"></script>
-    <script src="../../_static/underscore.js"></script>
-    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/documentation_options.js?v=88e83a66"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
     
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" /> 
   </head><body>
-    <div class="related" role="navigation" aria-label="related navigation">
+    <div class="related" role="navigation" aria-label="Related">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -194,7 +190,9 @@
 
 <span class="c1"># ** Interface</span>
 
-<div class="viewcode-block" id="load"><a class="viewcode-back" href="../../kicost.html#kicost.sexpdata.load">[docs]</a><span class="k">def</span> <span class="nf">load</span><span class="p">(</span><span class="n">filelike</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">):</span>
+<div class="viewcode-block" id="load">
+<a class="viewcode-back" href="../../kicost.html#kicost.sexpdata.load">[docs]</a>
+<span class="k">def</span> <span class="nf">load</span><span class="p">(</span><span class="n">filelike</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Load object from S-expression stored in `filelike`.</span>
 
@@ -214,7 +212,10 @@
     <span class="k">return</span> <span class="n">loads</span><span class="p">(</span><span class="n">filelike</span><span class="o">.</span><span class="n">read</span><span class="p">(),</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="loads"><a class="viewcode-back" href="../../kicost.html#kicost.sexpdata.loads">[docs]</a><span class="k">def</span> <span class="nf">loads</span><span class="p">(</span><span class="n">string</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">):</span>
+
+<div class="viewcode-block" id="loads">
+<a class="viewcode-back" href="../../kicost.html#kicost.sexpdata.loads">[docs]</a>
+<span class="k">def</span> <span class="nf">loads</span><span class="p">(</span><span class="n">string</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Load object from S-expression `string`.</span>
 
@@ -288,7 +289,10 @@
     <span class="k">return</span> <span class="n">obj</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span></div>
 
 
-<div class="viewcode-block" id="dump"><a class="viewcode-back" href="../../kicost.html#kicost.sexpdata.dump">[docs]</a><span class="k">def</span> <span class="nf">dump</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">filelike</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">):</span>
+
+<div class="viewcode-block" id="dump">
+<a class="viewcode-back" href="../../kicost.html#kicost.sexpdata.dump">[docs]</a>
+<span class="k">def</span> <span class="nf">dump</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="n">filelike</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Write `obj` as an S-expression into given stream `filelike`.</span>
 
@@ -307,7 +311,10 @@
     <span class="n">filelike</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">unicode</span><span class="p">(</span><span class="n">dumps</span><span class="p">(</span><span class="n">obj</span><span class="p">)))</span></div>
 
 
-<div class="viewcode-block" id="dumps"><a class="viewcode-back" href="../../kicost.html#kicost.sexpdata.dumps">[docs]</a><span class="k">def</span> <span class="nf">dumps</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">):</span>
+
+<div class="viewcode-block" id="dumps">
+<a class="viewcode-back" href="../../kicost.html#kicost.sexpdata.dumps">[docs]</a>
+<span class="k">def</span> <span class="nf">dumps</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Convert python object into an S-expression.</span>
 
@@ -361,7 +368,10 @@
     <span class="k">return</span> <span class="n">tosexp</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span></div>
 
 
-<div class="viewcode-block" id="car"><a class="viewcode-back" href="../../kicost.html#kicost.sexpdata.car">[docs]</a><span class="k">def</span> <span class="nf">car</span><span class="p">(</span><span class="n">obj</span><span class="p">):</span>
+
+<div class="viewcode-block" id="car">
+<a class="viewcode-back" href="../../kicost.html#kicost.sexpdata.car">[docs]</a>
+<span class="k">def</span> <span class="nf">car</span><span class="p">(</span><span class="n">obj</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Alias of ``obj[0]``.</span>
 
@@ -374,7 +384,10 @@
     <span class="k">return</span> <span class="n">obj</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span></div>
 
 
-<div class="viewcode-block" id="cdr"><a class="viewcode-back" href="../../kicost.html#kicost.sexpdata.cdr">[docs]</a><span class="k">def</span> <span class="nf">cdr</span><span class="p">(</span><span class="n">obj</span><span class="p">):</span>
+
+<div class="viewcode-block" id="cdr">
+<a class="viewcode-back" href="../../kicost.html#kicost.sexpdata.cdr">[docs]</a>
+<span class="k">def</span> <span class="nf">cdr</span><span class="p">(</span><span class="n">obj</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    `cdr`-like function.</span>
 
@@ -397,6 +410,7 @@
         <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">dot</span><span class="p">,</span> <span class="n">Symbol</span><span class="p">)</span> <span class="ow">and</span> <span class="n">dot</span><span class="o">.</span><span class="n">value</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;.&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="n">obj</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
     <span class="k">return</span> <span class="n">obj</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span></div>
+
 
 
 <span class="c1"># ** Core</span>
@@ -493,7 +507,9 @@
         <span class="k">return</span> <span class="bp">cls</span><span class="o">.</span><span class="n">_lisp_quoted_to_raw</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">string</span><span class="p">,</span> <span class="n">string</span><span class="p">)</span>
 
 
-<div class="viewcode-block" id="Symbol"><a class="viewcode-back" href="../../kicost.html#kicost.sexpdata.Symbol">[docs]</a><span class="k">class</span> <span class="nc">Symbol</span><span class="p">(</span><span class="n">SExpBase</span><span class="p">):</span>
+<div class="viewcode-block" id="Symbol">
+<a class="viewcode-back" href="../../kicost.html#kicost.sexpdata.Symbol">[docs]</a>
+<span class="k">class</span> <span class="nc">Symbol</span><span class="p">(</span><span class="n">SExpBase</span><span class="p">):</span>
 
     <span class="n">_lisp_quoted_specials</span> <span class="o">=</span> <span class="p">[</span>
         <span class="p">(</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\\\\</span><span class="s1">&#39;</span><span class="p">),</span>    <span class="c1"># must come first to avoid doubly quoting &quot;\&quot;</span>
@@ -505,11 +521,17 @@
 
     <span class="n">_lisp_quoted_to_raw</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">((</span><span class="n">q</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span> <span class="k">for</span> <span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">q</span><span class="p">)</span> <span class="ow">in</span> <span class="n">_lisp_quoted_specials</span><span class="p">)</span>
 
-<div class="viewcode-block" id="Symbol.tosexp"><a class="viewcode-back" href="../../kicost.html#kicost.sexpdata.Symbol.tosexp">[docs]</a>    <span class="k">def</span> <span class="nf">tosexp</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tosexp</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">quote</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_val</span><span class="p">)</span></div></div>
+<div class="viewcode-block" id="Symbol.tosexp">
+<a class="viewcode-back" href="../../kicost.html#kicost.sexpdata.Symbol.tosexp">[docs]</a>
+    <span class="k">def</span> <span class="nf">tosexp</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tosexp</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">quote</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_val</span><span class="p">)</span></div>
+</div>
 
 
-<div class="viewcode-block" id="String"><a class="viewcode-back" href="../../kicost.html#kicost.sexpdata.String">[docs]</a><span class="k">class</span> <span class="nc">String</span><span class="p">(</span><span class="n">SExpBase</span><span class="p">):</span>
+
+<div class="viewcode-block" id="String">
+<a class="viewcode-back" href="../../kicost.html#kicost.sexpdata.String">[docs]</a>
+<span class="k">class</span> <span class="nc">String</span><span class="p">(</span><span class="n">SExpBase</span><span class="p">):</span>
 
     <span class="n">_lisp_quoted_specials</span> <span class="o">=</span> <span class="p">[</span>  <span class="c1"># from Pymacs</span>
         <span class="p">(</span><span class="s1">&#39;</span><span class="se">\\</span><span class="s1">&#39;</span><span class="p">,</span> <span class="s1">&#39;</span><span class="se">\\\\</span><span class="s1">&#39;</span><span class="p">),</span>    <span class="c1"># must come first to avoid doubly quoting &quot;\&quot;</span>
@@ -518,14 +540,24 @@
 
     <span class="n">_lisp_quoted_to_raw</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">((</span><span class="n">q</span><span class="p">,</span> <span class="n">r</span><span class="p">)</span> <span class="k">for</span> <span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">q</span><span class="p">)</span> <span class="ow">in</span> <span class="n">_lisp_quoted_specials</span><span class="p">)</span>
 
-<div class="viewcode-block" id="String.tosexp"><a class="viewcode-back" href="../../kicost.html#kicost.sexpdata.String.tosexp">[docs]</a>    <span class="k">def</span> <span class="nf">tosexp</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tosexp</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-        <span class="k">return</span> <span class="n">uformat</span><span class="p">(</span><span class="s1">&#39;&quot;</span><span class="si">{0}</span><span class="s1">&quot;&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">quote</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_val</span><span class="p">))</span></div></div>
+<div class="viewcode-block" id="String.tosexp">
+<a class="viewcode-back" href="../../kicost.html#kicost.sexpdata.String.tosexp">[docs]</a>
+    <span class="k">def</span> <span class="nf">tosexp</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tosexp</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">uformat</span><span class="p">(</span><span class="s1">&#39;&quot;</span><span class="si">{0}</span><span class="s1">&quot;&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">quote</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_val</span><span class="p">))</span></div>
+</div>
 
 
-<div class="viewcode-block" id="Quoted"><a class="viewcode-back" href="../../kicost.html#kicost.sexpdata.Quoted">[docs]</a><span class="k">class</span> <span class="nc">Quoted</span><span class="p">(</span><span class="n">SExpBase</span><span class="p">):</span>
 
-<div class="viewcode-block" id="Quoted.tosexp"><a class="viewcode-back" href="../../kicost.html#kicost.sexpdata.Quoted.tosexp">[docs]</a>    <span class="k">def</span> <span class="nf">tosexp</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tosexp</span><span class="o">=</span><span class="n">tosexp</span><span class="p">):</span>
-        <span class="k">return</span> <span class="n">uformat</span><span class="p">(</span><span class="s2">&quot;&#39;</span><span class="si">{0}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">tosexp</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_val</span><span class="p">))</span></div></div>
+<div class="viewcode-block" id="Quoted">
+<a class="viewcode-back" href="../../kicost.html#kicost.sexpdata.Quoted">[docs]</a>
+<span class="k">class</span> <span class="nc">Quoted</span><span class="p">(</span><span class="n">SExpBase</span><span class="p">):</span>
+
+<div class="viewcode-block" id="Quoted.tosexp">
+<a class="viewcode-back" href="../../kicost.html#kicost.sexpdata.Quoted.tosexp">[docs]</a>
+    <span class="k">def</span> <span class="nf">tosexp</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tosexp</span><span class="o">=</span><span class="n">tosexp</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">uformat</span><span class="p">(</span><span class="s2">&quot;&#39;</span><span class="si">{0}</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">tosexp</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_val</span><span class="p">))</span></div>
+</div>
+
 
 
 <span class="k">class</span> <span class="nc">Bracket</span><span class="p">(</span><span class="n">SExpBase</span><span class="p">):</span>
@@ -723,9 +755,9 @@
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
         <div class="sphinxsidebarwrapper">
-<div id="searchbox" style="display: none" role="search">
+<search id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="../../search.html" method="get">
@@ -733,13 +765,13 @@
       <input type="submit" value="Go" />
     </form>
     </div>
-</div>
+</search>
 <script>document.getElementById('searchbox').style.display = "block"</script>
         </div>
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="related" role="navigation" aria-label="related navigation">
+    <div class="related" role="navigation" aria-label="Related">
       <h3>Navigation</h3>
       <ul>
         <li class="right" style="margin-right: 10px">
@@ -754,8 +786,8 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2015, XESS Corporation.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 5.3.0.
+    &#169; Copyright 2015, XESS Corporation.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 8.1.3.
     </div>
   </body>
 </html>
