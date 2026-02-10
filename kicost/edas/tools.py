@@ -703,6 +703,7 @@ def order_refs(refs, collapse=True, ref_sep=PART_NSEQ_SEPRTR):
     # Combine the prefixes and number ranges back into part references.
     collapsed_refs = []
     first_ref = None
+    prj_prefix = None
 
     for prefix, nums in prefix_nums.items():
         # Is this a multiproject ref?
