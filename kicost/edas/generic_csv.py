@@ -203,7 +203,8 @@ def get_part_groups(in_file, distributors):
         # Get the values for the fields in each library part (if any).
         refs, fields, gen_cntr = extract_fields(row, header, header_file, dialect, gen_cntr)
         for ref in refs:
-            accepted_components[ref] = fields
+            fields['ref'] = ref
+            accepted_components[ref] = fields.copy()
 
     # No project information in CSVs
     prj_info = {'title': os.path.basename(in_file),
